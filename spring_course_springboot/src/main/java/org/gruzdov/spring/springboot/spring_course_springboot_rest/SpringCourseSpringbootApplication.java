@@ -1,4 +1,4 @@
-package org.gruzdov.spring.springboot.spring_course_springboot;
+package org.gruzdov.spring.springboot.spring_course_springboot_rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
