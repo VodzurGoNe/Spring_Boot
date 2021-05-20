@@ -27,17 +27,17 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
         return allEmployees;
     }
-/*
+
     @Override
     public void saveEmployee(Employee employee) {
-        Session session = factory.getCurrentSession();
+        Session session = entityManager.unwrap(Session.class);
 
         session.saveOrUpdate(employee);
     }
 
     @Override
     public Employee getEmployee(Long id) {
-        Session session = factory.getCurrentSession();
+        Session session = entityManager.unwrap(Session.class);
 
         Employee employee = session.get(Employee.class, id);
         return employee;
@@ -45,7 +45,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
     @Override
     public void deleteEmployee(Long id) {
-        Session session = factory.getCurrentSession();
+        Session session = entityManager.unwrap(Session.class);
 
         Query<Employee> query = session.createQuery("delete from Employee " +
                 "where id =:employeeId");
@@ -54,5 +54,4 @@ public class EmployeeDAOImpl implements EmployeeDAO {
         query.executeUpdate();
     }
 
- */
 }

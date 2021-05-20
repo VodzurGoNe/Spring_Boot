@@ -1,6 +1,7 @@
 package org.gruzdov.spring.springboot.spring_course_springboot_rest.controller;
 
 import org.gruzdov.spring.springboot.spring_course_springboot_rest.entity.Employee;
+import org.gruzdov.spring.springboot.spring_course_springboot_rest.exception_handling.NoSuchEmployeeException;
 import org.gruzdov.spring.springboot.spring_course_springboot_rest.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -23,7 +24,7 @@ public class MyRESTController {
 
         return allEmployee;
     }
-/*
+
     @GetMapping("/employees/{id}")
     public Employee getEmployee(@PathVariable Long id) {
         Employee employee = employeeService.getEmployee(id);
@@ -61,5 +62,4 @@ public class MyRESTController {
         return "Employee with ID = " + id + " was deleted";
     }
 
- */
 }

@@ -8,9 +8,9 @@ import java.util.List;
 public interface EmployeeDAO {
     List<Employee> getAllEmployees();
 
-//    void saveEmployee(Employee employee);
+    void saveEmployee(Employee employee);
 
-//    Employee getEmployee(Long id);
+    Employee getEmployee(Long id);
 
-//    void deleteEmployee(Long id);
+    void deleteEmployee(Long id);
 }
